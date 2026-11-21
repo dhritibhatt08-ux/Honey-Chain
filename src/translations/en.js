@@ -1,0 +1,290 @@
+export const en = {
+  common: {
+    platformName: "Honey Chain",
+    platformSubtitle: "Smart Honey Traceability & Beekeeping Platform",
+    tagline: "Verifiable Hive-to-Consumer Honey Passport",
+    teamName: "Team HiveNova",
+    sihBadge: "Smart India Hackathon 2026 • SIH26021",
+    demoMode: "Demonstration Mode",
+    demoNotice: "Sample telemetry & simulated on-chain records for presentation",
+    live: "Live",
+    healthy: "Healthy",
+    warning: "Warning",
+    attention: "Attention Needed",
+    verified: "100% Cryptographically Verified",
+    loading: "Loading telemetry...",
+    save: "Save Record",
+    cancel: "Cancel",
+    submit: "Submit",
+    search: "Search...",
+    filter: "Filter",
+    export: "Export",
+    details: "View Details",
+    close: "Close",
+    printCertificate: "Print Authenticity Certificate",
+    copyHash: "Copy Hash",
+    hashCopied: "Hash copied to clipboard!",
+    status: "Status",
+    date: "Date",
+    batchId: "Batch ID",
+    hiveId: "Hive ID",
+    beekeeper: "Beekeeper",
+    location: "Location",
+    quantity: "Quantity",
+    temperature: "Temperature",
+    humidity: "Humidity",
+    weight: "Hive Weight",
+    purity: "Purity Index"
+  },
+  nav: {
+    home: "Home",
+    dashboard: "Beekeeper Dashboard",
+    smartHive: "Smart Hive IoT",
+    aiAnalysis: "AI Health Analysis",
+    harvest: "Harvest & Batches",
+    blockchain: "Blockchain Traceability",
+    verify: "Verify Honey QR",
+    about: "About Us",
+    contact: "Support & Contact",
+    verifyCTA: "Verify Honey"
+  },
+  home: {
+    heroTitle: "Blockchain-Based Honey Traceability & Smart Beekeeping",
+    heroDesc: "A connected IoT and AI platform turning real-time hive sensor telemetry and supply-chain milestones into an immutable, verifiable digital history on distributed blockchain ledger.",
+    exploreBtn: "Explore Beekeeper Platform",
+    verifyBtn: "Verify Honey Bottle via QR",
+    sihCategory: "Problem Statement: SIH26021 • Cyber Security & Blockchain",
+    stats: {
+      activeHives: "Active Monitored Hives",
+      tracedHoney: "Total Honey Traced",
+      verifiedBatches: "Verified Batches Minted",
+      integrityRate: "Data Integrity Rate"
+    },
+    workflowTitle: "The 7-Step Hive-to-Consumer Traceability Journey",
+    workflowSubtitle: "From IoT sensors inside the wooden hive to the consumer's breakfast table, every milestone is verified.",
+    steps: {
+      step1Title: "1. Smart Hive",
+      step1Desc: "DHT22/DHT11 sensors, load cells (HX711) and ESP32-CAM monitor temperature, humidity, weight and comb image inside the hive every 20 minutes.",
+      step2Title: "2. Data Processing",
+      step2Desc: "Edge microcontroller performs local noise filtering and transmits telemetry via Wi-Fi/MQTT/REST to the centralized cloud database.",
+      step3Title: "3. AI Analysis",
+      step3Desc: "EfficientNet-B0 computer vision model detects brood diseases (Varroa mite, Foulbrood) and predicts upcoming honey yield with confidence scores.",
+      step4Title: "4. Honey Harvest",
+      step4Desc: "Beekeeper logs harvest quantity and lab parameters (moisture, HMF, C4 sugar test), creating a tamper-evident digital batch record.",
+      step5Title: "5. Blockchain Ledger",
+      step5Desc: "Batch hash and supply-chain events are minted into an immutable distributed ledger (Cosmos SDK / CometBFT / Hyperledger).",
+      step6Title: "6. QR Packaging",
+      step6Desc: "A tamper-evident encrypted QR code is stamped onto every retail bottle, encoding its immutable batch identifier.",
+      step7Title: "7. Consumer Verification",
+      step7Desc: "Consumers scan the QR code to unveil the full digital passport: beekeeper identity, hive origin, harvest date, lab test results and on-chain proof."
+    },
+    pillarsTitle: "Problem vs Solution Architecture",
+    pillarsSubtitle: "Addressing India's honey adulteration crisis with modern deep-tech engineering.",
+    problemTitle: "The Problem We Address",
+    problems: [
+      "Widespread honey adulteration with cheap C4/C3 sugar syrups destroying consumer trust.",
+      "Opaque and fragmented supply chain with zero verifiable origin for retail consumers.",
+      "Severe economic loss and high colony mortality (~40%) for rural beekeepers lacking early disease alerts."
+    ],
+    solutionTitle: "Our Engineered Solution",
+    solutions: [
+      "IoT + Edge telemetry for automated 24/7 hive temperature, humidity and colony weight monitoring.",
+      "Computer vision AI (EfficientNet-B0) detecting diseases and forecasting harvest yield.",
+      "Hybrid distributed ledger (MongoDB off-chain + Blockchain on-chain) guaranteeing 100% data provenance."
+    ],
+    impactTitle: "Measurable Impact",
+    impacts: [
+      "15-30% Increase in beekeeper honey yield through optimal harvest timing.",
+      "~40% Reduction in colony losses with early Varroa mite and foulbrood alerts.",
+      "< 5 Seconds QR-based consumer traceability check restoring authentic brand trust.",
+      "20-40% Fraud reduction supporting national regulatory standards (FSSAI, NBHM)."
+    ]
+  },
+  dashboard: {
+    title: "Beekeeper Farm Dashboard",
+    subtitle: "Simple, real-time hive management designed for beekeepers and apiary cooperatives.",
+    apiarySelect: "Select Apiary Location",
+    quickStats: {
+      totalHives: "Registered Hives",
+      healthScore: "Colony Health Index",
+      yieldToday: "Estimated Yield Gain",
+      activeSensors: "IoT Sensors Online"
+    },
+    hivesSection: "Registered Hives & Health Overview",
+    chartsSection: "24-Hour Telemetry Trends (Avg. Apiary Readings)",
+    activitySection: "Recent Apiary Logs & Automated Advisory",
+    actions: {
+      addNewHive: "+ Register New Hive",
+      logInspection: "Log Physical Inspection",
+      createBatch: "Create Honey Batch",
+      refreshSensors: "Refresh IoT Stream"
+    },
+    alerts: {
+      tempHigh: "High brood temperature (>36°C) detected in Hive #04. Recommended: Increase hive entrance ventilation.",
+      weightDrop: "Sudden weight loss (-1.8 kg) in Hive #02. Warning: Swarming event or honey extraction indicated.",
+      healthyNote: "All hives in Sector B maintaining optimal 34.5°C incubation climate."
+    }
+  },
+  smartHive: {
+    title: "Smart Hive IoT Telemetry Center",
+    subtitle: "Real-time sensor telemetry from DHT22, Load Cell, and ESP32-CAM nodes.",
+    liveStreamTitle: "ESP32-CAM Hive Visual Stream",
+    frameInterval: "Capture interval: Every 20 minutes • Resolution: 1600x1200",
+    simulationControls: "Demonstration Telemetry Controls",
+    simActive: "Live Telemetry Simulator Active",
+    simPaused: "Simulator Paused",
+    toggleSim: "Toggle Live Simulation",
+    sensors: {
+      dht22: "DHT22 Temperature & Humidity Sensor",
+      loadCell: "Load Cell + HX711 Amplifier",
+      esp32Cam: "ESP32-CAM Optical Frame",
+      microcontroller: "ESP32 NodeMCU Gateway"
+    },
+    metrics: {
+      ambientTemp: "Internal Brood Temperature",
+      ambientHumidity: "Internal Relative Humidity",
+      totalWeight: "Gross Hive Weight",
+      batteryLevel: "Solar Battery Backup",
+      wifiSignal: "Wi-Fi RSSI Signal",
+      lastSync: "Last MQTT Packet"
+    },
+    thresholds: {
+      title: "Automated Edge Rules & Anomaly Detection",
+      rule1: "Brood Temperature: 33°C - 36°C (Optimal Incubation)",
+      rule2: "Relative Humidity: 50% - 65% (Optimal Wax & Brood)",
+      rule3: "Weight Fluctuation: >1.5 kg sudden decline triggers theft/swarm alarm"
+    }
+  },
+  aiAnalysis: {
+    title: "AI Hive Health & Disease Intelligence",
+    subtitle: "Computer vision and deep learning model (EfficientNet-B0) analyzing honeycomb images for early disease detection.",
+    selectorTitle: "Choose Comb Inspection Image",
+    uploadPrompt: "Upload Custom Hive Photo",
+    analyzing: "Running EfficientNet-B0 inference...",
+    resultsTitle: "AI Diagnosis & Health Report",
+    confidence: "Prediction Confidence",
+    healthStatus: "Hive Health Status",
+    detectedCondition: "Identified Condition",
+    yieldForecast: "Yield Forecast (Next Harvest)",
+    remedyTitle: "Recommended Beekeeper Action",
+    accuracyNote: "Model evaluated against Kaggle Honeybee Hive Health & NBHM open datasets with 96.4% precision.",
+    samples: {
+      healthy: "Healthy Brood Comb",
+      varroa: "Varroa Mite Infestation",
+      foulbrood: "American Foulbrood (AFB)",
+      chalkbrood: "Chalkbrood Fungus"
+    }
+  },
+  harvest: {
+    title: "Honey Harvest & Batch Management",
+    subtitle: "Create verifiable batches, record lab parameters, and commit immutable provenance hashes to blockchain.",
+    newBatchBtn: "Register New Honey Batch",
+    batchListTitle: "Registered Batches & Digital Passports",
+    form: {
+      batchId: "Generated Batch ID",
+      harvestDate: "Harvest Date",
+      beekeeperName: "Beekeeper Name",
+      apiaryLocation: "Apiary / District",
+      sourceHives: "Source Hive(s)",
+      floraType: "Dominant Floral Source",
+      quantityKg: "Net Quantity (kg)",
+      moisture: "Moisture Content (%) [FSSAI max 20%]",
+      hmf: "HMF Level (mg/kg) [FSSAI max 80 mg/kg]",
+      c4Test: "C4 Sugar Syrup Test",
+      pollenCount: "Pollen Count (grains/gram)",
+      notes: "Harvest Notes & Observations",
+      submitBatch: "Mint Batch to Blockchain Ledger"
+    },
+    table: {
+      batchId: "Batch ID",
+      date: "Harvest Date",
+      beekeeper: "Beekeeper",
+      flora: "Flora Source",
+      quantity: "Quantity (kg)",
+      labStatus: "FSSAI Lab Check",
+      blockchainStatus: "Blockchain State",
+      actions: "Actions"
+    }
+  },
+  blockchain: {
+    title: "Distributed Blockchain Traceability Ledger",
+    subtitle: "Immutable provenance tracking from apiary to consumer powered by private distributed ledger.",
+    architectureTitle: "Honey Chain Ledger Architecture",
+    architectureDesc: "Hybrid On-Chain / Off-Chain Architecture: Off-chain MongoDB stores high-frequency sensor time-series; On-chain CometBFT consensus nodes store immutable batch milestones and cryptographic state hashes.",
+    journeyTitle: "Verifiable Supply-Chain Trajectory",
+    nodesTitle: "Consensus Validator Nodes",
+    explorerTitle: "Real-time Block Transactions Ledger",
+    verifierTitle: "Cryptographic Hash & Merkle Root Verifier",
+    verifierPrompt: "Enter Batch ID or SHA-256 Transaction Hash to verify provenance integrity:",
+    verifyBtn: "Verify Hash Authenticity",
+    stages: {
+      apiary: "Apiary Harvest",
+      lab: "Quality Testing",
+      processing: "Cold Filtration",
+      storage: "Packaging & Bottling",
+      logistics: "Distribution & Transport",
+      retail: "Retail Shelf",
+      consumer: "Consumer Verification"
+    }
+  },
+  verify: {
+    title: "Consumer Honey Verification Portal",
+    subtitle: "Scan the QR code on your Honey Chain jar or enter the batch code to trace its authentic digital journey.",
+    cameraNotice: "Point your camera at the QR code on your honey jar",
+    startCamera: "Open Camera Scanner",
+    stopCamera: "Close Camera",
+    manualEntry: "Or Enter Batch Code Manually",
+    manualPlaceholder: "e.g., HC-2026-HIMA-081",
+    verifyAction: "Verify Honey Authenticity",
+    quickDemoTitle: "Click a Sample Batch to Test Instantly:",
+    scanning: "Scanning QR Code...",
+    pouringHoney: "Verifying cryptographic proof and extracting honey passport...",
+    passportTitle: "Official Honey Digital Passport",
+    genuineBadge: "Certified 100% Pure & Authentic",
+    fraudAlert: "Warning: Unverified or Tampered Batch Code!",
+    productDetails: "Product Information",
+    beekeeperDetails: "Beekeeper & Source Apiary",
+    harvestDetails: "Harvest & Hive Climate",
+    labDetails: "Government-Approved Lab Test Results",
+    chainDetails: "Immutable Blockchain Verification Proof",
+    resetScanner: "Scan Another Honey Bottle"
+  },
+  about: {
+    title: "About Honey Chain & Team HiveNova",
+    subtitle: "Smart India Hackathon 2026 Project (SIH26021) • PS: Blockchain-Based Honey Traceability and Smart Beekeeping Management",
+    teamTitle: "Team HiveNova (Team ID: 168252)",
+    objectiveTitle: "Project Mission & Vision",
+    objectiveDesc: "Honey Chain bridges traditional Indian beekeepers with modern cryptographic trust and AI-driven precision apiculture. By digitizing hive health and enforcing decentralized supply-chain provenance, we protect consumers from synthetic sugar adulteration while elevating rural farmer incomes.",
+    techStackTitle: "End-to-End Technology Stack",
+    policyTitle: "National Policies & Research Alignment",
+    nbhmTitle: "National Beekeeping & Honey Mission (NBHM)",
+    nbhmDesc: "Aligned with NBHM's mandate for digital IT adoption, beekeeper registration, and scientific beekeeping promotion.",
+    madhuTitle: "Madhukranti Portal Integration",
+    madhuDesc: "Engineered to interface with national digital onboarding and honey source registries.",
+    fssaiTitle: "FSSAI Quality Assurance Standards",
+    fssaiDesc: "Compliance with FSSAI Honey & Beehive Analysis manual for moisture, HMF, sucrose, and isotopic C4 testing."
+  },
+  contact: {
+    title: "Beekeeper Support & Helpdesk",
+    subtitle: "Have questions about onboarding your apiary or verifying honey? Reach out to our technical team.",
+    formTitle: "Send an Inquiry or Advisory Request",
+    name: "Full Name",
+    email: "Email Address",
+    phone: "Mobile Phone (with WhatsApp for advisory)",
+    role: "Your Role",
+    roles: {
+      beekeeper: "Beekeeper / Honey Farmer",
+      consumer: "Consumer / Honey Buyer",
+      coop: "Beekeeping Cooperative / SHG",
+      processor: "Honey Processor / Brand",
+      researcher: "Agronomist / Researcher"
+    },
+    subject: "Subject",
+    message: "Message",
+    sendBtn: "Submit Support Request",
+    successMsg: "Thank you! Your advisory inquiry has been received. Our team will contact you within 24 hours.",
+    helplineTitle: "Toll-Free Beekeeper Advisory Hotline",
+    helplineNumber: "1800-HONEY-CARE (1800-466-3922)",
+    helplineTiming: "Available Monday - Saturday: 8:00 AM - 7:00 PM IST"
+  }
+};

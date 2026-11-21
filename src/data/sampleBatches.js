@@ -1,0 +1,352 @@
+export const sampleBatches = [
+  {
+    batchId: 'HC-2026-HIMA-081',
+    productName: 'Raw Himalayan Multifloral Forest Honey',
+    productNameHi: 'कच्चा हिमालयी बहुपुष्पीय वन शहद',
+    netWeight: '500g',
+    status: 'verified',
+    harvestDate: '2026-10-18',
+    processingDate: '2026-10-21',
+    packagingDate: '2026-10-24',
+    beekeeper: {
+      name: 'Rameshwar Thakur',
+      nameHi: 'रामेश्वर ठाकुर',
+      id: 'NBHM-HP-4482',
+      cooperative: 'Parvati Valley Apiculture Federation',
+      cooperativeHi: 'पार्वती घाटी मधुमक्खी पालन महासंघ',
+      village: 'Naggar, Kullu District',
+      state: 'Himachal Pradesh',
+      latitude: '32.1182° N',
+      longitude: '77.1645° E',
+      experienceYears: 14,
+      hivesCount: 28
+    },
+    floraSource: 'Wild Himalayan Rhododendron, Brassica & Clover',
+    floraSourceHi: 'जंगली बुरांश, सरसों और तिपतिया फूल',
+    hives: ['HIVE-01', 'HIVE-03'],
+    quantityHarvested: 84.5,
+    labTests: {
+      certifiedBy: 'FSSAI Accredited Central Food Laboratory #ND-18',
+      certifiedByHi: 'FSSAI मान्यता प्राप्त केंद्रीय खाद्य प्रयोगशाला #ND-18',
+      testReportId: 'FSSAI-LAB-2026-8912',
+      moistureContent: 17.2,
+      moistureStatus: 'PASS (Standard: ≤20%)',
+      hmfLevel: 14.2,
+      hmfStatus: 'PASS (Standard: ≤80 mg/kg - Indicates unheated fresh honey)',
+      sucrosePercent: 2.8,
+      sucroseStatus: 'PASS (Standard: ≤5.0%)',
+      c4SugarSyrupTest: 'NEGATIVE (0.0% foreign isotopic sugar)',
+      c4Status: 'PASS (No adulteration detected)',
+      pollenCountPerGram: 88500,
+      pollenStatus: 'PASS (Dominant Rhododendron & Acacia pollen grains)',
+      diastaseActivity: 19.4,
+      diastaseStatus: 'PASS (Active enzyme retention - Standard ≥8 Schade)'
+    },
+    blockchain: {
+      network: 'HoneyChain Private Ledger (Cosmos SDK / CometBFT)',
+      blockHeight: 10842,
+      txHash: '0x8f3c7e9142b6a089de415b3c882194f10738a5b299e1c3b4a28f8014529a9ce8',
+      merkleRoot: '0x4c2b9a1178...e93f',
+      consensusNodes: 4,
+      timestamp: '2026-10-24T14:32:00Z',
+      smartContract: '0xHoneyChainBatchRegistryV2'
+    },
+    supplyChainJourney: [
+      {
+        step: 'Apiary Harvest',
+        stepHi: 'छत्ते से कटाई',
+        date: '2026-10-18 09:30 AM',
+        location: 'Parvati Valley Apiary, Naggar, HP',
+        operator: 'Rameshwar Thakur (Beekeeper)',
+        txHash: '0x8f3c7e...9ce8',
+        verified: true,
+        details: 'Hand-harvested using sustainable centrifugal extractor; ambient hive temp 34.6°C'
+      },
+      {
+        step: 'Quality & Lab Assay',
+        stepHi: 'गुणवत्ता परीक्षण',
+        date: '2026-10-20 02:15 PM',
+        location: 'State Analytical Food Lab, Shimla',
+        operator: 'Dr. Sunita Sen (Food Chemist)',
+        txHash: '0x9a4d81...4b12',
+        verified: true,
+        details: 'Tested for moisture, HMF, C4 isotopic carbon ratio, and pesticide residue'
+      },
+      {
+        step: 'Cold Micro-Filtration',
+        stepHi: 'कोल्ड माइक्रो-फिल्ट्रेशन',
+        date: '2026-10-21 11:00 AM',
+        location: 'Himalayan Organic Processing Hub, Solan',
+        operator: 'HiveNova Certified Facility #HP-03',
+        txHash: '0x7e2b10...90c4',
+        verified: true,
+        details: 'Filtered through fine cloth mesh below 38°C to retain raw enzymes and pollen'
+      },
+      {
+        step: 'Tamper-Evident Bottling & QR Stamping',
+        stepHi: 'पैकेजिंग व क्यूआर स्टैम्पिंग',
+        date: '2026-10-24 04:45 PM',
+        location: 'HiveNova Clean Bottling Plant, Chandigarh',
+        operator: 'Packaging Line A-4',
+        txHash: '0x3c99a2...77fa',
+        verified: true,
+        details: 'Food-grade glass jar sealed with tamper-evident NFC/QR security band'
+      },
+      {
+        step: 'Distribution & Consumer Shelf',
+        stepHi: 'वितरण एवं उपभोक्ता शेल्फ',
+        date: '2026-10-28 10:00 AM',
+        location: 'Organic Naturals Flagship Store, New Delhi',
+        operator: 'Logistics Partner BlueDart ColdChain',
+        txHash: '0x12fa90...8133',
+        verified: true,
+        details: 'Monitored temperature log (18°C-22°C during transit)'
+      }
+    ]
+  },
+  {
+    batchId: 'HC-2026-KASH-114',
+    productName: 'Pure White Kashmir Acacia Honey',
+    productNameHi: 'शुद्ध कश्मीरी कीकर (बबूल) शहद',
+    netWeight: '500g',
+    status: 'verified',
+    harvestDate: '2026-09-24',
+    processingDate: '2026-09-27',
+    packagingDate: '2026-09-30',
+    beekeeper: {
+      name: 'Bashir Ahmad Mir',
+      nameHi: 'बशीर अहमद मीर',
+      id: 'NBHM-JK-1092',
+      cooperative: 'Kashmir Valley Beekeepers Society',
+      cooperativeHi: 'कश्मीर घाटी मधुमक्खी पालक सोसाइटी',
+      village: 'Tral, Pulwama',
+      state: 'Jammu & Kashmir',
+      latitude: '33.9312° N',
+      longitude: '75.1215° E',
+      experienceYears: 22,
+      hivesCount: 45
+    },
+    floraSource: 'Robinia Pseudoacacia (Kashmir White Acacia)',
+    floraSourceHi: 'रोबिनिया छद्मबबूल (कश्मीर सफेद बबूल)',
+    hives: ['HIVE-08', 'HIVE-09'],
+    quantityHarvested: 110.0,
+    labTests: {
+      certifiedBy: 'FSSAI Regional Food Laboratory #SR-04',
+      certifiedByHi: 'FSSAI क्षेत्रीय खाद्य प्रयोगशाला #SR-04',
+      testReportId: 'FSSAI-LAB-2026-9214',
+      moistureContent: 16.5,
+      moistureStatus: 'PASS (Standard: ≤20%)',
+      hmfLevel: 8.9,
+      hmfStatus: 'PASS (Standard: ≤80 mg/kg - Pristine Alpine Freshness)',
+      sucrosePercent: 1.9,
+      sucroseStatus: 'PASS (Standard: ≤5.0%)',
+      c4SugarSyrupTest: 'NEGATIVE (0.0% foreign isotopic sugar)',
+      c4Status: 'PASS (100% Monofloral Authenticity)',
+      pollenCountPerGram: 94200,
+      pollenStatus: 'PASS (High Acacia pollen density)',
+      diastaseActivity: 22.1,
+      diastaseStatus: 'PASS (Superior enzyme level)'
+    },
+    blockchain: {
+      network: 'HoneyChain Private Ledger (Cosmos SDK / CometBFT)',
+      blockHeight: 10419,
+      txHash: '0x5a18c9f0293eb774a129038fc99a182740bcda6302917734ea01994bb2e89123',
+      merkleRoot: '0x1b89ef32...99a0',
+      consensusNodes: 4,
+      timestamp: '2026-09-30T10:14:00Z',
+      smartContract: '0xHoneyChainBatchRegistryV2'
+    },
+    supplyChainJourney: [
+      {
+        step: 'Apiary Harvest',
+        stepHi: 'छत्ते से कटाई',
+        date: '2026-09-24 08:00 AM',
+        location: 'Tral Acacia Groves, Pulwama, J&K',
+        operator: 'Bashir Ahmad Mir (Beekeeper)',
+        txHash: '0x5a18c9...9123',
+        verified: true,
+        details: 'Monofloral acacia bloom harvest; pristine clear amber hue'
+      },
+      {
+        step: 'Quality & Lab Assay',
+        stepHi: 'गुणवत्ता परीक्षण',
+        date: '2026-09-26 01:00 PM',
+        location: 'SKUAST Kashmir Apiculture Lab, Srinagar',
+        operator: 'Prof. Farooq Wani',
+        txHash: '0x3b8901...a841',
+        verified: true,
+        details: '16.5% moisture confirmed; NMR spectrum matches authentic acacia'
+      },
+      {
+        step: 'Cold Micro-Filtration',
+        stepHi: 'कोल्ड माइक्रो-फिल्ट्रेशन',
+        date: '2026-09-27 03:30 PM',
+        location: 'Valley Bio-Processing Unit, Srinagar',
+        operator: 'Certified Organic Staff',
+        txHash: '0x22cf44...11bb',
+        verified: true,
+        details: 'Unpasteurized cold filtering at 36°C'
+      },
+      {
+        step: 'Tamper-Evident Bottling',
+        stepHi: 'पैकेजिंग व बॉटलिंग',
+        date: '2026-09-30 11:30 AM',
+        location: 'HiveNova Kashmir Hub',
+        operator: 'Packaging Line K-2',
+        txHash: '0x99aa12...3344',
+        verified: true,
+        details: 'Vacuum sealed in high-grade UV protected jar'
+      }
+    ]
+  },
+  {
+    batchId: 'HC-2026-SUND-042',
+    productName: 'Raw Sundarbans Wild Mangrove Forest Honey',
+    productNameHi: 'कच्चा सुंदरबन जंगली मैंग्रोव वन शहद',
+    netWeight: '500g',
+    status: 'verified',
+    harvestDate: '2026-10-02',
+    processingDate: '2026-10-06',
+    packagingDate: '2026-10-09',
+    beekeeper: {
+      name: 'Subal Mondal (Mouli Collector)',
+      nameHi: 'सुबल मंडल (मौली संग्रहकर्ता)',
+      id: 'NBHM-WB-8193',
+      cooperative: 'Sundarbans Forest Cooperative Society',
+      cooperativeHi: 'सुंदरबन वन सहकारी समिति',
+      village: 'Gosaba, South 24 Parganas',
+      state: 'West Bengal',
+      latitude: '22.1648° N',
+      longitude: '88.8042° E',
+      experienceYears: 19,
+      hivesCount: 18
+    },
+    floraSource: 'Khalsi, Goran & Bain Mangrove Trees',
+    floraSourceHi: 'खलसी, गोरान और बैन मैंग्रोव वृक्ष',
+    hives: ['MANGROVE-SECTOR-4'],
+    quantityHarvested: 62.0,
+    labTests: {
+      certifiedBy: 'FSSAI Eastern Regional Lab #KOL-02',
+      certifiedByHi: 'FSSAI पूर्वी क्षेत्रीय लैब #KOL-02',
+      testReportId: 'FSSAI-LAB-2026-7840',
+      moistureContent: 18.4,
+      moistureStatus: 'PASS (Standard: ≤20%)',
+      hmfLevel: 18.6,
+      hmfStatus: 'PASS (Standard: ≤80 mg/kg - Forest Raw Freshness)',
+      sucrosePercent: 1.4,
+      sucroseStatus: 'PASS (Standard: ≤5.0%)',
+      c4SugarSyrupTest: 'NEGATIVE (0.0% foreign sugar)',
+      c4Status: 'PASS (Authentic Wild Mangrove Bio-markers)',
+      pollenCountPerGram: 104000,
+      pollenStatus: 'PASS (Multifloral Mangrove Species)',
+      diastaseActivity: 20.8,
+      diastaseStatus: 'PASS (High wild enzymatic value)'
+    },
+    blockchain: {
+      network: 'HoneyChain Private Ledger (Cosmos SDK / CometBFT)',
+      blockHeight: 10594,
+      txHash: '0x17d2bb9047ea610294fc89a7738291049281aabf892104928103947bca889214',
+      merkleRoot: '0x8892ab01...77fa',
+      consensusNodes: 4,
+      timestamp: '2026-10-09T08:20:00Z',
+      smartContract: '0xHoneyChainBatchRegistryV2'
+    },
+    supplyChainJourney: [
+      {
+        step: 'Wild Forest Sustainable Collection',
+        stepHi: 'टिकाऊ जंगली शहद संग्रह',
+        date: '2026-10-02 07:15 AM',
+        location: 'Sundarbans Biosphere Reserve',
+        operator: 'Registered Mouli Traditional Collectors',
+        txHash: '0x17d2bb...9214',
+        verified: true,
+        details: 'Sustainable harvest leaving queen brood untouched'
+      },
+      {
+        step: 'Forest Dept & Lab Inspection',
+        stepHi: 'वन विभाग एवं लैब परीक्षण',
+        date: '2026-10-05 04:00 PM',
+        location: 'Canning Forest Department Inspection Station',
+        operator: 'Officer B. K. Ray',
+        txHash: '0x44aa81...00bb',
+        verified: true,
+        details: 'Permit verified and initial lab sample taken'
+      },
+      {
+        step: 'Packaging & QR Security Minting',
+        stepHi: 'पैकेजिंग व क्यूआर सुरक्षा मिंटिंग',
+        date: '2026-10-09 01:10 PM',
+        location: 'Kolkata Sustainable Processing Depot',
+        operator: 'Packaging Line E-1',
+        txHash: '0x99cc44...88aa',
+        verified: true,
+        details: 'Blockchain hash anchored to CometBFT ledger'
+      }
+    ]
+  },
+  {
+    batchId: 'HC-2026-WARN-999',
+    productName: 'Suspect Honey Sample (Adulteration Test Demonstration)',
+    productNameHi: 'संदिग्ध शहद नमूना (मिलावट परीक्षण डेमो)',
+    netWeight: '500g',
+    status: 'flagged_counterfeit',
+    harvestDate: 'Unknown / Unrecorded',
+    processingDate: 'Unverified Facility',
+    packagingDate: '2026-10-25',
+    beekeeper: {
+      name: 'Unregistered Source / Unknown Entity',
+      nameHi: 'अज्ञात / अपंजीकृत स्रोत',
+      id: 'NOT-REGISTERED',
+      cooperative: 'None (Counterfeit alert)',
+      cooperativeHi: 'कोई नहीं (संदिग्ध मिलावट चेतावनी)',
+      village: 'Unverified Origin',
+      state: 'Unknown',
+      latitude: 'N/A',
+      longitude: 'N/A',
+      experienceYears: 0,
+      hivesCount: 0
+    },
+    floraSource: 'Inverted High-Fructose Corn Syrup & Cane Sugar Blend',
+    floraSourceHi: 'हाई फ्रुक्टोज कॉर्न सिरप और चीनी का घोल',
+    hives: ['NO-IOT-SENSORS-ATTACHED'],
+    quantityHarvested: 0,
+    labTests: {
+      certifiedBy: 'FSSAI Vigilance Mobile Intercept Testing',
+      certifiedByHi: 'FSSAI सतर्कता मोबाइल इंटरसेप्ट परीक्षण',
+      testReportId: 'ALERT-FRAUD-2026-004',
+      moistureContent: 24.8,
+      moistureStatus: 'FAILED (Exceeds permissible 20% limit)',
+      hmfLevel: 142.5,
+      hmfStatus: 'FAILED (Critically high >80 mg/kg - Artificial heating & aging)',
+      sucrosePercent: 14.2,
+      sucroseStatus: 'FAILED (High added sugar >5.0%)',
+      c4SugarSyrupTest: 'POSITIVE (42.6% synthetic C4 carbon isotope detected)',
+      c4Status: 'FAILED (Synthetic sugar syrup adulteration confirmed)',
+      pollenCountPerGram: 1200,
+      pollenStatus: 'FAILED (Severe lack of natural floral pollen)',
+      diastaseActivity: 1.2,
+      diastaseStatus: 'FAILED (Denatured / Zero biological active enzymes)'
+    },
+    blockchain: {
+      network: 'Flagged on HoneyChain Fraud Detection Blacklist',
+      blockHeight: 10890,
+      txHash: '0xCOUNTERFEIT_REVOKED_HASH_9999999999999999999999999999999999999',
+      merkleRoot: 'INVALID_MERKLE_PROOF',
+      consensusNodes: 0,
+      timestamp: '2026-10-25T19:00:00Z',
+      smartContract: 'RevocationEventEmitted'
+    },
+    supplyChainJourney: [
+      {
+        step: 'Unauthorized Intercept',
+        stepHi: 'अनधिकृत जब्ती',
+        date: '2026-10-25 06:00 PM',
+        location: 'Highway Checkpost Intercept',
+        operator: 'FSSAI Mobile Vigilance Squad',
+        txHash: '0xREVOKED_ALERT_001',
+        verified: false,
+        details: 'No digital hive records found on blockchain; sample confiscated for lab assay'
+      }
+    ]
+  }
+];

@@ -1,0 +1,93 @@
+export const workflowStepsData = [
+  {
+    step: 1,
+    titleEn: '1. Smart Hive',
+    titleHi: '1. स्मार्ट छत्ता (IoT)',
+    subtitleEn: 'Real-Time Telemetry & Edge Sensing',
+    subtitleHi: 'वास्तविक समय में छत्ते की सेंसर निगरानी',
+    icon: 'Cpu',
+    sensors: ['DHT22 Temp & Humidity', 'Load Cell + HX711', 'ESP32-CAM (Optical Brood Frames)'],
+    descEn: 'Sensors installed inside the wooden hive capture internal temperature, humidity, gross colony weight, and comb visuals every 20 minutes.',
+    descHi: 'छत्ते के अंदर लगे सेंसर हर 20 मिनट में तापमान, नमी, वजन और छत्ते की तस्वीरें जुटाते हैं।',
+    detailsEn: 'Operates on low-power ESP32 microcontroller with solar-charged 18650 Li-ion battery. Low bandwidth telemetry packet (<1 KB per burst) designed for rural areas.',
+    detailsHi: 'सोलर पावर्ड 18650 बैटरी और कम बैंडविड्थ के साथ ग्रामीण क्षेत्रों में निर्बाध कार्य।'
+  },
+  {
+    step: 2,
+    titleEn: '2. Data Processing',
+    titleHi: '2. डेटा प्रोसेसिंग',
+    subtitleEn: 'Edge Filtering & Cloud Gateway',
+    subtitleHi: 'एज फ़िल्टरिंग एवं क्लाउड गेटवे',
+    icon: 'Radio',
+    sensors: ['MQTT Protocol', 'Wi-Fi / 4G GSM Gateway', 'MongoDB Time-Series Engine'],
+    descEn: 'ESP32 filters sensor noise locally and transmits encrypted telemetry packets via lightweight MQTT or REST APIs to the centralized backend.',
+    descHi: 'माइक्रोकंट्रोलर डेटा को फ़िल्टर करके सुरक्षित रूप से क्लाउड डेटाबेस पर भेजता है।',
+    detailsEn: 'Ensures low-latency streaming with edge anomaly detection (e.g. instant alerts if temperature exceeds 36.5°C or weight drops abruptly).',
+    detailsHi: 'अचानक वजन घटने या तापमान बढ़ने पर तुरंत चेतावनी प्रणाली।'
+  },
+  {
+    step: 3,
+    titleEn: '3. AI Analysis',
+    titleHi: '3. AI स्वास्थ्य विश्लेषण',
+    subtitleEn: 'Deep Learning & Yield Forecasting',
+    subtitleHi: 'रोग पहचान और उत्पादन का सटीक अनुमान',
+    icon: 'BrainCircuit',
+    sensors: ['EfficientNet-B0 CNN', 'OpenCV Image Preprocessor', 'Historical Regression Models'],
+    descEn: 'Comb images from ESP32-CAM are processed by an EfficientNet-B0 computer vision model to diagnose Varroa mites, American Foulbrood, and Chalkbrood.',
+    descHi: 'AI विजन मॉडल छत्ते की तस्वीरों से वरोआ माइट और फाउलब्रूड जैसे घातक रोगों की समय पर पहचान करता है।',
+    detailsEn: 'Generates confidence scores and forecasts honey harvest yield by correlating comb fullness with ambient weather and weight increments.',
+    detailsHi: '96.4% सटीकता के साथ रोग पहचान और अनुमानित शहद उत्पादन की गणना।'
+  },
+  {
+    step: 4,
+    titleEn: '4. Honey Harvest',
+    titleHi: '4. शहद कटाई एवं गुणवत्ता',
+    subtitleEn: 'Digital Harvest Logging & Lab Assays',
+    subtitleHi: 'कटाई रिकॉर्ड और FSSAI लैब परीक्षण',
+    icon: 'Droplet',
+    sensors: ['Digital Refractometer', 'FSSAI C4 Sugar Isotope Test', 'HMF Spectrophotometry'],
+    descEn: 'Beekeepers record extracted honey quantity, floral source, and hive IDs. Third-party accredited food labs test for moisture (<20%), HMF, and C4 sugar syrup.',
+    descHi: 'मधुमक्खी पालक निकाली गई मात्रा, फूलों का स्रोत दर्ज करते हैं और लैब में शुद्धता की जांच होती है।',
+    detailsEn: 'Establishes a verifiable digital batch profile linking physical honey jars back to specific parent hives and verified beekeepers.',
+    detailsHi: 'शहद की हर बूंद का उसके मूल छत्ते और पालक के साथ सीधा डिजिटल संबंध स्थापित होता है।'
+  },
+  {
+    step: 5,
+    titleEn: '5. Blockchain Ledger',
+    titleHi: '5. ब्लॉकचेन लेजर',
+    subtitleEn: 'Immutable Distributed Ledger Provenance',
+    subtitleHi: 'अपरिवर्तनीय डिजिटल रिकॉर्ड',
+    icon: 'ShieldCheck',
+    sensors: ['Cosmos SDK / CometBFT', 'Hyperledger Private Ledger', 'SHA-256 Merkle Proofs'],
+    descEn: 'Harvest milestones, lab test certificates, and processing steps are hashed and committed to an immutable distributed ledger with CometBFT consensus.',
+    descHi: 'कटाई और लैब रिपोर्ट के मुख्य आंकड़े ब्लॉकचेन लेजर पर पक्के तौर पर दर्ज हो जाते हैं।',
+    detailsEn: 'Zero single point of failure. Records cannot be retroactively altered, backdated, or falsified by manufacturers or middlemen.',
+    detailsHi: 'कोई भी बिचौलिया या व्यापारी इन आंकड़ों से छेड़छाड़ या फर्जीवाड़ा नहीं कर सकता।'
+  },
+  {
+    step: 6,
+    titleEn: '6. Smart QR Code',
+    titleHi: '6. स्मार्ट QR कोड',
+    subtitleEn: 'Tamper-Evident Packaging Passport',
+    subtitleHi: 'शहद की शीशी पर सुरक्षित क्यूआर कोड',
+    icon: 'QrCode',
+    sensors: ['High-Density 2D Matrix', 'Cryptographic Batch Pointer', 'Tamper-Seal Security Ring'],
+    descEn: 'Each retail jar is stamped with a unique, tamper-evident QR code encoding its verifiable blockchain batch identifier and digital passport URL.',
+    descHi: 'हर शीशी पर एक अनूठा QR कोड चिपकाया जाता है जो सीधे ब्लॉकचेन रिकॉर्ड से जुड़ता है।',
+    detailsEn: 'Enables instant scanning via any smartphone camera without requiring proprietary hardware or complex app installations.',
+    detailsHi: 'किसी भी स्मार्टफोन से तुरंत स्कैन करके कुछ ही सेकंड में प्रामाणिकता जांचें।'
+  },
+  {
+    step: 7,
+    titleEn: '7. Consumer Verification',
+    titleHi: '7. उपभोक्ता सत्यापन',
+    subtitleEn: 'Instant Transparency & Digital Passport',
+    subtitleHi: 'ग्राहक द्वारा त्वरित जांच एवं डिजिटल पासपोर्ट',
+    icon: 'CheckCircle2',
+    sensors: ['Consumer Portal Web App', 'Visual Liquid Honey Pour Flow', 'Downloadable Certificate'],
+    descEn: 'Consumers scan the jar to unveil the complete journey: beekeeper identity, hive GPS location, harvest date, temperature logs, and FSSAI lab results.',
+    descHi: 'ग्राहक मोबाइल पर शहद की पूरी कहानी, किसान का नाम, छत्ते का स्थान और लैब रिपोर्ट देख सकते हैं।',
+    detailsEn: 'Guarantees 100% authentic, unadulterated pure honey and provides total confidence and brand trust in under 5 seconds.',
+    detailsHi: '5 सेकंड के अंदर मिलावटरहित शुद्ध प्राकृतिक शहद की 100% पक्की गारंटी।'
+  }
+];
